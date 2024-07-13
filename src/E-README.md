@@ -49,10 +49,17 @@ _Suma de los elementos por caso_
 
 ___Según columnas___
 
-$1(m) + 2(m-1)2 + 3(m-2)2 + ... + m(1)2$
-$2[2(m-1) + 3(m-2) + ... + m(1)] + m$
+$$
+1(m) + 2(m-1)2 + 3(m-2)2 + ... + m(1)2
+$$
 
-$\sum_{n=1}^{m}2n(m-(n-1))+m$
+$$
+2[2(m-1) + 3(m-2) + ... + m(1)] + m
+$$
+
+$$
+\sum_{n=1}^{m}2n(m-(n-1))+m
+$$
 
 ```
 for (int i = 0; i < count; i++) {
@@ -85,27 +92,44 @@ Time (ms): 0.87
 ___Según filas___
 
 $fila_1 = 1$
+
 $fila_2 = 2 + 1 +2 = 2(2) + 1$
+
 $fila_3 = 3 + 2 + 1 +2 + 3 = 2(3) + 2(2) + 1$
-$fila_n = 2(n) + 2(n-1) + 2(n-2) +...+2(2) + 1$
 
-$fila_n = (\sum_{i=1}^{n}2i) - 1$
+$$
+fila_n = 2(n) + 2(n-1) + 2(n-2) +...+2(2) + 1
+$$
 
-$fila_n = 2(\sum_{i=1}^{n}i) - 1$
+$$
+fila_n = (\sum_{i=1}^{n}2i) - 1
+$$
 
-$fila_n = 2\frac{n(n+1)}{2} - 1 = n(n+1) - 1$
+$$
+fila_n = 2(\sum_{i=1}^{n}i) - 1
+$$
+
+$$
+fila_n = 2\frac{n(n+1)}{2} - 1 = n(n+1) - 1
+$$
 
 Total de la pirámide de altura $m$:
 
-$total = \sum_{n=1}^{m}n(n+1)-1$
+$$
+total = \sum_{n=1}^{m}n(n+1)-1
+$$
 
-$total = \sum_{n=1}^{m}n^2 + n - 1$
+$$
+total = \sum_{n=1}^{m}n^2 + n - 1
+$$
 
-$total = \sum_{n=1}^{m}n^2 + \sum_{n=1}^{m} n - \sum_{n=1}^{m}1$
+$$
+total = \sum_{n=1}^{m}n^2 + \sum_{n=1}^{m} n - \sum_{n=1}^{m}1
+$$
 
-$total = \frac{m(m+1)(2m+1)}{6} + \frac{m(m+1)}{2} - m$
-
-$total = \frac{m(m+1)(2m+1)}{6} + \frac{m(m+1)}{2} - m$
+$$
+total = \frac{m(m+1)(2m+1)}{6} + \frac{m(m+1)}{2} - m
+$$
 
 ```
 for (int  i = 0; i < count; i++) {
